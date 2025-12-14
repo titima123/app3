@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide Scrum Simple</title>
+    <style>
+ 
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #6c757d;
+            --bg-color: #f4f4f9;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: #333;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding-bottom: 50px;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 10px;
+            color: #2c3e50;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+
+        .roles .card { border-top: 4px solid #28a745; }
+        .artifacts .card { border-top: 4px solid #ffc107; }
+        .events .card { border-top: 4px solid #dc3545; }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>La Méthode Scrum</h1>
+        <p>Une introduction simple et rapide à l'agilité</p>
+    </header>
+
+    <div class="container">
+        
+        <section>
+            <h2>C'est quoi Scrum ?</h2>
+            <p>Scrum est un framework agile utilisé pour développer des produits complexes. Il est basé sur l'empirisme et se concentre sur la livraison incrémentale de valeur.</p>
+        </section>
+
+        <section class="roles">
+            <h2>1. Les Rôles (Roles)</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Product Owner (PO)</h3>
+                    <p>Définit le "Quoi". Il gère le Product Backlog et maximise la valeur du produit pour les utilisateurs.</p>
+                </div>
+                <div class="card">
+                    <h3>Scrum Master (SM)</h3>
+                    <p>Le coach de l'équipe. Il s'assure que Scrum est bien compris et élimine les obstacles (impediments).</p>
+                </div>
+                <div class="card">
+                    <h3>Developers</h3>
+                    <p>Définissent le "Comment". L'équipe qui réalise le travail technique pour créer l'incrément à chaque Sprint.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="artifacts">
+            <h2>2. Les Artefacts</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Product Backlog</h3>
+                    <p>La liste ordonnée de tout ce qui est nécessaire pour le produit (User Stories, Bugs, etc.).</p>
+                </div>
+                <div class="card">
+                    <h3>Sprint Backlog</h3>
+                    <p>Les éléments sélectionnés pour le Sprint en cours, plus le plan pour les livrer.</p>
+                </div>
+                <div class="card">
+                    <h3>Incrément</h3>
+                    <p>Le résultat "fini" et utilisable à la fin d'un Sprint. C'est la somme du travail accompli.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="events">
+            <h2>3. Les Événements</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Sprint</h3>
+                    <p>Le cœur de Scrum. Une période fixe (1 à 4 semaines) où le travail est réalisé.</p>
+                </div>
+                <div class="card">
+                    <h3>Sprint Planning</h3>
+                    <p>Réunion au début du Sprint pour définir l'objectif et choisir le travail à faire.</p>
+                </div>
+                <div class="card">
+                    <h3>Daily Scrum</h3>
+                    <p>Réunion quotidienne de 15 min pour synchroniser l'équipe et planifier les 24h à venir.</p>
+                </div>
+                <div class="card">
+                    <h3>Sprint Review</h3>
+                    <p>Présentation du travail terminé aux parties prenantes (stakeholders) pour obtenir du feedback.</p>
+                </div>
+                <div class="card">
+                    <h3>Sprint Retrospective</h3>
+                    <p>Réunion pour l'équipe afin d'inspecter ses processus et s'améliorer pour le prochain Sprint.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Créé avec ❤️ pour apprendre Scrum</p>
+    </footer>
+
+</body>
+</html>
